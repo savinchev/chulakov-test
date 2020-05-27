@@ -1,0 +1,67 @@
+@import 'vars';
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	box-sizing: inherit;
+}
+
+body {
+	font-size: 16px;
+	font-weight: 400;
+	font-family: 'Roboto', -apple-system, system-ui, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+button {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	font-size: inherit;
+	color: $btn-text-color;
+	font-weight: inherit;
+	text-align: center;
+	background: 0;
+	border: 0;
+	outline: 0;
+	cursor: pointer;
+	transition: $hover-transition;
+	
+	&:hover {
+		background-color: $btn-bg;
+	}
+	&.active {
+		background: $btn-active-bg;
+	}
+}
+
+.container {
+	min-height: 500px;
+	max-width: 1000px;
+	padding: 0 15px;
+	margin: 0 auto;
+
+	box-shadow: $shadow;
+}
+
+.preloader {
+	text-align: center;
+}
+
+.searchInput {
+	display: block;
+	margin: 0  0 30px auto;
+	padding: 10px;
+	width: 35%;
+	background: 0;
+	border: 0;
+	outline: 0;
+	box-shadow: $shadow;
+}

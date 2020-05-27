@@ -1,0 +1,84 @@
+@media(max-width: 750px) {
+	body {
+		font-size: 14px;
+	}
+
+	button, 
+	input,
+	.users__list .list__item {
+		padding: 5px 10px;
+	}
+
+	.users__list.preview .list__item .list__item-info .list__item-body p {
+		max-width: 100%;
+	}
+
+	.users__list.preview .list__item.player {
+		display: block;
+		width: 48%;
+
+		.list__item-info,
+		.list__item-player {
+				width: 100%;
+				height: auto;
+		}
+	}
+}
+
+@media(max-width: 600px) {
+	.users__list.preview .list__item,
+	.users__list.preview .list__item.player {
+		width: 100%;
+	}
+}
+
+@media(max-width: 515px) {
+	.controls {
+		padding: 0 0 20px;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		.controls__item.controls__sort,
+		.controls__item.controls__view {
+			width: 100%;
+
+		}
+
+		.controls__item.controls__view {
+			margin-top: 20px;
+		}
+	}
+
+	.searchInput {
+		width: 50%;
+	}
+
+	.users__list .list__item .list__item-content {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+
+		.list__item-name,
+		.list__item-phone {
+			width: 100%;
+			padding-left: 0;
+		}
+	}
+}
+
+@media(max-width: 410px) {
+	.controls .controls__item .controls__item-btns {
+		display: block;
+
+		.controls__item-btn + .controls__item-btn {
+			border-top: 1px solid $btn-border-color;
+			border-left: none;
+		}
+	}
+
+	.searchInput {
+		width: 100%;
+	}
+}
